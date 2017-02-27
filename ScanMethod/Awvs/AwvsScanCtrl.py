@@ -22,7 +22,6 @@ class Awvs(ErgateThread.ErgateThread):
         cmd = self.__config(task)
         self.__call_api(cmd)
         vul_list = self.__log_read(cmd)
-        print vul_list
         return (task[0], task[1], vul_list)
 
     def __log_read(self, cmd):
