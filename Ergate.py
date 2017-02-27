@@ -39,7 +39,6 @@ def CollectInfo():
     return info
 
 def CreateScan(number, path, method):
-    print number
     threads = []
     for i in range(number):
         threads.append(AwvsScanCtrl.Awvs(path))
